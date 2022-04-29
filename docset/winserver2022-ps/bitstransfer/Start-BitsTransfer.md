@@ -67,13 +67,13 @@ The command imports the source and destination file locations and then pipes the
 The **Start-BitsTransfer** command creates a new BITS transfer job for each of the files in `filelist.txt` and then transfers them concurrently to the client.
 
 The contents of the filelist.txt file resemble the following information:
-
+```CSV
 Source, Destination
 http://server01/servertestdir/testfile1.txt, c:\clienttestdir\testfile1.txt
 http://server01/servertestdir/testfile2.txt, c:\clienttestdir\testfile2.txt
 http://server01/servertestdir/testfile3.txt, c:\clienttestdir\testfile3.txt
 http://server01/servertestdir/testfile4.txt, c:\clienttestdir\testfile4.txt
-
+```
 **Note:** First line of the file must include Source, Destination header as in the example.
 
 ### Example 3: Create a BITS transfer job that uploads a file
@@ -134,13 +134,13 @@ The command imports the source and destination file locations and then pipes the
 The **Start-BitsTransfer** command creates a new BITS transfer job for each of the files in filelist.txt and then transfers them sequentially to the client.
 
 The contents of the filelist.txt file resemble the following information:
-
+```CSV
 Source, Destination
 http://server01/servertestdir/testfile1.txt, c:\clienttestdir\testfile1.txt
 http://server01/servertestdir/testfile2.txt, c:\clienttestdir\testfile2.txt
 http://server01/servertestdir/testfile3.txt, c:\clienttestdir\testfile3.txt
 http://server01/servertestdir/testfile4.txt, c:\clienttestdir\testfile4.txt
-
+```
 **Note:** First line of the file must include Source, Destination header as in the example.
 
 ### Example 7: Create a BITS transfer job that downloads multiple files 
@@ -164,13 +164,13 @@ The command imports the source and destination file locations and then pipes the
 The **Start-BitsTransfer** command creates a new BITS transfer job for each of the files in filelist.txt and then transfers them concurrently to the server.
 
 The contents of the filelist.txt file resemble the following information:
-
+```CSV
 Source, Destination
 c:\clienttestdir\testfile1.txt, http://server01/servertestdir/testfile1.txt
 c:\clienttestdir\testfile2.txt, http://server01/servertestdir/testfile2.txt
 c:\clienttestdir\testfile3.txt, http://server01/servertestdir/testfile3.txt
 c:\clienttestdir\testfile4.txt, http://server01/servertestdir/testfile4.txt
-
+```
 **Note:** First line of the file must include Source, Destination header as in the example.
 
 
